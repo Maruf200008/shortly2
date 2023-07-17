@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.circle {
+  margin-left: -90px;
+  margin-top: -90px;
+  width: 280px;
+  height: 280px;
+  background: linear-gradient(to bottom, #3c359c 40%, #3c359c 50%);
+  filter: blur(130px);
+}
