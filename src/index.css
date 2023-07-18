@@ -3,10 +3,13 @@
 @tailwind utilities;
 
 .circle {
-  margin-left: -90px;
+  margin-left: -120px;
   margin-top: -90px;
-  width: 280px;
-  height: 280px;
-  background: linear-gradient(to bottom, #3c359c 40%, #3c359c 50%);
+  width: 230px;
+  height: 230px;
+  background: linear-gradient(to bottom, #3c359c 40%, #3c359c 70%);
   filter: blur(130px);
+}
+body {
+  font-family: "Open Sans", sans-serif;
 }
