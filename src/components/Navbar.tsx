@@ -1,5 +1,6 @@
 import { useState } from "react"
-import Logo from "../images/logo2.png"
+import { Link } from "react-router-dom"
+import logo from "../images/logo2.png"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const handleClick = () => {
@@ -9,9 +10,9 @@ const Navbar = () => {
     <>
       <nav className="bg-white border-gray-200 ">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="/" className="flex items-center">
-            <img src={Logo} className="h-8 mr-3" alt="Logo" />
-          </a>
+          <Link to="/" className="flex items-center">
+            <img src={logo} className="h-8 mr-3" alt="Logo" />
+          </Link>
           <button
             data-collapse-toggle="navbar-default"
             type="button"
@@ -42,20 +43,20 @@ const Navbar = () => {
           >
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white  ">
               <li>
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   className="block py-2 pl-3 pr-4  text-primary hover:bg-white/25   md:hover:text-primary transition rounded md:bg-transparent md:text-gray-500 md:p-0 "
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/"
+                <Link
+                  to="/list"
                   className="block py-2 pl-3 pr-4  text-primary hover:bg-white/25   md:hover:text-primary transition rounded md:bg-transparent md:text-gray-500 md:p-0 "
                 >
-                  Link
-                </a>
+                  List
+                </Link>
               </li>
             </ul>
           </div>
